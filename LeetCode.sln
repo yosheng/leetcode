@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwnSum", "TwnSum\TwnSum.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse", "Reverse\Reverse.csproj", "{0481058F-A8DB-4320-BA00-D4BD4E05E247}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPalindrome", "IsPalindrome\IsPalindrome.csproj", "{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +22,14 @@ Global
 		{0481058F-A8DB-4320-BA00-D4BD4E05E247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0481058F-A8DB-4320-BA00-D4BD4E05E247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0481058F-A8DB-4320-BA00-D4BD4E05E247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DE93B4EE-EF05-428C-B4C6-53DA6E09C519} = {F3DF4F77-4436-4D7A-A6B1-3B66336F535A}
 		{0481058F-A8DB-4320-BA00-D4BD4E05E247} = {F3DF4F77-4436-4D7A-A6B1-3B66336F535A}
+		{EFAA2A8B-ECBA-4A21-96D3-78B895EF070E} = {F3DF4F77-4436-4D7A-A6B1-3B66336F535A}
 	EndGlobalSection
 EndGlobal
