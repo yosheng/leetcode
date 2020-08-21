@@ -12,181 +12,79 @@ namespace AddTwoNumbers
             // 输出：7 -> 0 -> 8
             // 原因：342 + 465 = 807
 
-            ListNode l1 = new ListNode(2);
-            l1.next = new ListNode(4);
-            l1.next.next = new ListNode(3);
-            
-            ListNode l2 = new ListNode(5);
-            l2.next = new ListNode(6);
-            l2.next.next = new ListNode(4);
-            
-            ListNode l3 = AddTwoNumbers(l1, l2);
-            while (l3 != null)
-            {
-                Console.WriteLine(l3.val);
-                l3 = l3.next;
-            }
-
-            // Console.WriteLine("=======================");
-            // ListNode l4 = new ListNode(9);
+            // ListNode l1 = new ListNode(2);
+            // l1.next = new ListNode(4);
+            // l1.next.next = new ListNode(3);
             //
-            // ListNode l5 = new ListNode(1);
-            // l5.next = new ListNode(9);
-            // l5.next.next = new ListNode(9);
-            // l5.next.next.next = new ListNode(9);
-            // l5.next.next.next.next = new ListNode(9);
-            // l5.next.next.next.next.next = new ListNode(9);
-            // l5.next.next.next.next.next.next = new ListNode(9);
-            // l5.next.next.next.next.next.next.next = new ListNode(9);
-            // l5.next.next.next.next.next.next.next.next = new ListNode(9);
-            // l5.next.next.next.next.next.next.next.next.next = new ListNode(9);
+            // ListNode l2 = new ListNode(5);
+            // l2.next = new ListNode(6);
+            // l2.next.next = new ListNode(4);
             //
-            // ListNode l6 = AddTwoNumbers(l4, l5);
-            // while (l6 != null)
+            // ListNode l3 = AddTwoNumbers(l1, l2);
+            // while (l3 != null)
             // {
-            //     Console.WriteLine(l6.val);
-            //     l6 = l6.next;
+            //     Console.WriteLine(l3.val);
+            //     l3 = l3.next;
             // }
             
-            // Console.WriteLine("=======================");
-            // ListNode l7 = new ListNode(1)
-            // {
-            //     next = new ListNode(0)
-            //     {
-            //         next = new ListNode(0)
-            //         {
-            //             next = new ListNode(0)
-            //             {
-            //                 next = new ListNode(0)
-            //                 {
-            //                     next = new ListNode(0)
-            //                     {
-            //                         next = new ListNode(0)
-            //                         {
-            //                             next = new ListNode(0)
-            //                             {
-            //                                 next = new ListNode(0)
-            //                                 {
-            //                                     next = new ListNode(0)
-            //                                     {
-            //                                         next = new ListNode(0)
-            //                                         {
-            //                                             next = new ListNode(0)
-            //                                             {
-            //                                                 next = new ListNode(0)
-            //                                                 {
-            //                                                     next = new ListNode(0)
-            //                                                     {
-            //                                                         next = new ListNode(0)
-            //                                                         {
-            //                                                             next = new ListNode(0)
-            //                                                             {
-            //                                                                 next = new ListNode(0)
-            //                                                                 {
-            //                                                                     next = new ListNode(0)
-            //                                                                     {
-            //                                                                         next = new ListNode(0)
-            //                                                                         {
-            //                                                                             next = new ListNode(0)
-            //                                                                             {
-            //                                                                                 next = new ListNode(0)
-            //                                                                                 {
-            //                                                                                     next = new ListNode(0)
-            //                                                                                     {
-            //                                                                                         next = new ListNode(
-            //                                                                                             0)
-            //                                                                                         {
-            //                                                                                             next =
-            //                                                                                                 new
-            //                                                                                                     ListNode(
-            //                                                                                                         0)
-            //                                                                                                     {
-            //                                                                                                         next
-            //                                                                                                             = new
-            //                                                                                                                 ListNode(
-            //                                                                                                                     0)
-            //                                                                                                                 {
-            //                                                                                                                     next
-            //                                                                                                                         = new
-            //                                                                                                                             ListNode(
-            //                                                                                                                                 0)
-            //                                                                                                                             {
-            //                                                                                                                                 next
-            //                                                                                                                                     = new
-            //                                                                                                                                         ListNode(
-            //                                                                                                                                             0)
-            //                                                                                                                                         {
-            //                                                                                                                                             next
-            //                                                                                                                                                 = new
-            //                                                                                                                                                     ListNode(
-            //                                                                                                                                                         0)
-            //                                                                                                                                                     {
-            //                                                                                                                                                         next
-            //                                                                                                                                                             = new
-            //                                                                                                                                                                 ListNode(
-            //                                                                                                                                                                     0)
-            //                                                                                                                                                                 {
-            //                                                                                                                                                                     next
-            //                                                                                                                                                                         = new
-            //                                                                                                                                                                             ListNode(
-            //                                                                                                                                                                                 0)
-            //                                                                                                                                                                             {
-            //                                                                                                                                                                                 next
-            //                                                                                                                                                                                     = new
-            //                                                                                                                                                                                         ListNode(
-            //                                                                                                                                                                                             0)
-            //                                                                                                                                                                                         {
-            //                                                                                                                                                                                             next
-            //                                                                                                                                                                                                 = new
-            //                                                                                                                                                                                                     ListNode(
-            //                                                                                                                                                                                                         1)
-            //                                                                                                                                                                                         }
-            //                                                                                                                                                                             }
-            //                                                                                                                                                                 }
-            //                                                                                                                                                     }
-            //                                                                                                                                         }
-            //                                                                                                                             }
-            //                                                                                                                 }
-            //                                                                                                     }
-            //                                                                                         }
-            //                                                                                     }
-            //                                                                                 }
-            //                                                                             }
-            //                                                                         }
-            //                                                                     }
-            //                                                                 }
-            //                                                             }
-            //                                                         }
-            //                                                     }
-            //                                                 }
-            //                                             }
-            //                                         }
-            //                                     }
-            //                                 }
-            //                             }
-            //                         }
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // };
-            //
-            // ListNode l8 = new ListNode(5);
-            // l8.next = new ListNode(6);
-            // l8.next.next = new ListNode(4);
-            //
-            // ListNode l9 = AddTwoNumbers(l7, l8);
-            // while (l9 != null)
-            // {
-            //     Console.WriteLine(l9.val);
-            //     l9 = l9.next;
-            // }
+            // 342 + 465 = 807
+            Print(LeetCodeAnswer(BuildNode(new int[]{3,4,2}),BuildNode(new int[]{4,6,5})));
+            // 3416
+            Print(LeetCodeAnswer(BuildNode(new int[]{1,0,9,5}),BuildNode(new int[]{2,3,2,1})));
+            // 10
+            Print(LeetCodeAnswer(BuildNode(new int[]{5}),BuildNode(new int[]{5})));
+            // 243 + 564 = 807
+            Print(AddTwoNumbers(BuildNode(new int[]{2,4,3}),BuildNode(new int[]{5,6,4})));
         }
 
         static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            
+            // 进位
+            int carry = 0;
+            ListNode headNode = null;
+            ListNode currentNode = null;
+            while (l1 != null || l2 != null)
+            {
+                // 先进行相加
+                var node = new ListNode((l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val) + carry);
+                
+                // 判断是否需要进位
+                if (node.val > 9)
+                {
+                    carry = 1;
+                    node.val -= 10;
+                }
+                else
+                {
+                    carry = 0;
+                }
+
+                // 判断是否为第一次头节点
+                headNode = headNode == null ? node : headNode;
+                
+                // 如果不存在当前节点则默认node作为当前节点
+                if (currentNode == null)
+                {
+                    currentNode = node;
+                }
+                else
+                {
+                    // 如果存在当前节点则将node指向当前的下个节点
+                    currentNode.next = node;
+                    currentNode = node;
+                }
+
+                l1 = l1 == null ? null : l1.next;
+                l2 = l2 == null ? null : l2.next;
+            }
+
+            // 出现进位但l1和l2下一数字都为0时上述循环无法进行，做特殊处理
+            if (carry == 1)
+            {
+                currentNode.next = new ListNode(1);
+            }
+
+            return headNode;
         }
 
         static ListNode AddTwoNumbersByLink(ListNode l1, ListNode l2)
@@ -339,6 +237,25 @@ namespace AddTwoNumbers
                 result.next = new ListNode(1);
             }
 
+            return head;
+        }
+        
+        private static void Print(ListNode node){
+            while (node != null){
+                Console.Write(node.val + " -> ");
+                node = node.next;
+            }
+            Console.WriteLine("");
+        }
+
+        private static ListNode BuildNode(int[] nums){
+            var head = new ListNode(nums[nums.Length - 1]);
+            ListNode nextNode = head;
+            for (int index = nums.Length - 2; index >=0; index--){
+                var node = new ListNode(nums[index]);
+                nextNode.next = node;
+                nextNode = node;
+            }
             return head;
         }
     }
